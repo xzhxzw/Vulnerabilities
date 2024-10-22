@@ -21,7 +21,8 @@ This vulnerability happen when `extractSessionNumAndInitNum` handle data from cl
 3. `extractSessionNumAndInitNum` get these fileds by using `strstr`. However, the length is not checked.
 4. Finally, whole string of these fields are copyed to the stack by `strncpy` and lead to a stack buffer overflow to execute arbitrary code.
 
-![微信图片_20241014164143.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ffed55b-ee53-4441-be11-70b5a405738b/e815f85a-47c8-45fa-8aba-d3c83343ec04/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241014164143.png)
+
+![5](photos/5.png)
 
 ## PoC
 
