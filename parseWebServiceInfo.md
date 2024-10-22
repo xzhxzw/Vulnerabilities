@@ -21,12 +21,15 @@ This vulnerability happen when `parseWebServiceInfo`  handle data from cloud ser
 3. `parseWebServiceInfo`  get these fileds by using `strstr`. However, the length is not checked.
 4. Finally, whole string of these fields are copyed to the stack by `strncpy` and lead to a stack buffer overflow to execute arbitrary code.
 - sink point 1（`GetMiscInfoResult`  field）:
+
 ![1](photos/1.png)
    
 - sink point 2（`ClientIP` field）:
+
 ![2](photos/2.png)  
     
 - sink point 3（`UserType`field）:
+
 ![3](photos/3.png)    
     
     
