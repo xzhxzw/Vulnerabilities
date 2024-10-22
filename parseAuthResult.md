@@ -21,7 +21,8 @@ This vulnerability happen when `parseAuthResult` handle data from cloud server b
 3. `parseAuthResult` get these data by using `strstr` . However, the length is not checked.
 4. Finally, whole string of these data are copyed to the stack by `strncpy` up to ten times and lead to a buffer overflow.
 
-![微信图片_20241014161335.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ffed55b-ee53-4441-be11-70b5a405738b/bc0e3da7-63ef-4310-95e9-028662fbf696/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20241014161335.png)
+
+![4](photos/4.png)
 
 PoC
 
